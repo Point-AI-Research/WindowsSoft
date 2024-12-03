@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavitroo - Software Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .page { display: none; }
+        .page.active { display: block; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center">
+                <img src="https://yt3.googleusercontent.com/cn30s72MB3m56urE9AMi0v558Y1DTCqGWFPTBAmrTsnWAlqJNN_I08cHB8Wd7gLoWmet7bQp" alt="Pavitroo Logo" class="mr-3 w-12 h-12 rounded-full">
+                Pavitroo
+            </div>
+            <div class="space-x-6">
+                <a href="#" data-page="home" class="nav-link hover:text-blue-200">Home</a>
+                <a href="#" data-page="software" class="nav-link hover:text-blue-200">Software</a>
+                <a href="#" data-page="about" class="nav-link hover:text-blue-200">About</a>
+                <a href="#" data-page="contact" class="nav-link hover:text-blue-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+            <div class="container mx-auto text-center">
+                <h1 class="text-5xl font-extrabold mb-4">Pavitroo Software Solutions</h1>
+                <p class="text-xl mb-8">Innovative Tools for Windows Users</p>
+                <a href="#" data-page="software" class="nav-link bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-100 transition">
+                    Explore Our Software
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Software Page -->
+    <div id="software" class="page">
+        <div class="container mx-auto py-16 px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Software Collection</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cry (Download Manager) -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-download text-6xl text-indigo-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Cry</h3>
+                    <p class="mb-4">Advanced Download Management Tool</p>
+                    <p class="text-sm text-gray-600 mb-4">
+                        Efficiently manage and accelerate your downloads with Cry
+                    </p>
+                    <a href="https://github.com/Point-AI-Research/Cry/releases/download/v1.0.0/Cry.exe" class="bg-indigo-500 text-white px-6 py-2 rounded-full hover:bg-indigo-600">
+                        Download
+                    </a>
+                </div>
+
+                <!-- Speecher (Text-to-Speech) -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-volume-up text-6xl text-pink-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Speecher</h3>
+                    <p class="mb-4">Powerful Text-to-Speech Converter</p>
+                    <p class="text-sm text-gray-600 mb-4">
+                        Convert text to natural-sounding speech instantly
+                    </p>
+                    <a href="https://github.com/Point-AI-Research/Speecher/releases/download/1.0/Speecher.exe" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600">
+                        Download
+                    </a>
+                </div>
+
+                <!-- Nibo (Network Scanning Tool) -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-network-wired text-6xl text-red-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Nibo</h3>
+                    <p class="mb-4">Advanced Network Scanning Tool</p>
+                    <p class="text-sm text-gray-600 mb-4">
+                        Comprehensive network diagnostics and scanning
+                    </p>
+                    <a href="blob:https://github.com/d45811ba-a14b-41a8-a32c-bc57ad851914" class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600">
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <div class="container mx-auto py-16 px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Pavitroo</h2>
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-12">
+                <p class="text-lg mb-6">Pavitroo is a software development initiative focused on creating innovative, user-friendly tools for Windows users. Our mission is to develop practical solutions that enhance digital productivity and experience.</p>
+                
+                <h3 class="text-2xl font-semibold mb-4">Our Software</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="font-bold text-indigo-600">Cry</h4>
+                        <p class="text-sm">A robust download management tool designed to optimize and accelerate download processes.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-pink-600">Speecher</h4>
+                        <p class="text-sm">An advanced text-to-speech converter that transforms written text into natural-sounding audio.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-red-600">Nibo</h4>
+                        <p class="text-sm">A powerful network scanning and diagnostic tool for comprehensive network analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <div class="container mx-auto py-16 px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-12">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border rounded-lg" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border rounded-lg" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Message</label>
+                        <textarea class="w-full px-4 py-2 border rounded-lg" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 w-full">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Pavitroo</h3>
+                <p>Innovative software solutions for Windows users</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li><a href="#" data-page="home" class="nav-link hover:text-blue-300">Home</a></li>
+                    <li><a href="#" data-page="software" class="nav-link hover:text-blue-300">Software</a></li>
+                    <li><a href="#" data-page="about" class="nav-link hover:text-blue-300">About</a></li>
+                    <li><a href="#" data-page="contact" class="nav-link hover:text-blue-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl hover:text-blue-300"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-300"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-300"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page Navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pageId = this.getAttribute('data-page');
+                
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+                
+                document.getElementById(pageId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
